@@ -72,7 +72,7 @@ public class MyActivity extends Activity {
 
         /* Repeating on every 20 minutes interval */
         manager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
-                1000 * 60 * 20, pendingIntent);
+                interval, pendingIntent);
     }
 
 }
